@@ -35,6 +35,9 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    //ui
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
     //RxLibrary
     implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
@@ -47,4 +50,9 @@ dependencies {
 
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    //etc
+    implementation 'org.projectlombok:lombok:1.16.14'
+    annotationProcessor 'org.projectlombok:lombok:1.16.14'
+    compileOnly('org.glassfish:javax.annotation:10.0-b28')
 }

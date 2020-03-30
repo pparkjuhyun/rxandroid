@@ -1,4 +1,4 @@
-package com.pparkjuhyun.rxandroid.activity;
+package com.pparkjuhyun.rxandroid.fragment;
 
 import android.os.Bundle;
 

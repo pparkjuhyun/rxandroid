@@ -8,17 +8,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".activity.RecyclerViewActivity">
+        android:theme="@style/AppTheme"
+        android:name=".RxApplication"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.VolleyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SearchActivity"/>
+        <activity android:name=".activity.TimerActivity"></activity>
+        <activity android:name=".activity.AsyncTaskActivity"></activity>
+        <activity android:name=".activity.RecyclerViewActivity" />
+        <activity android:name=".activity.SearchActivity" />
         <activity android:name=".activity.LoopActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.RxSampleActivity" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

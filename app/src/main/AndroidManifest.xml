@@ -2,15 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pparkjuhyun.rxandroid">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".RxApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".RxApplication"
         android:usesCleartextTraffic="true">
+        <activity android:name=".activity.RetrofitActivity"></activity>
         <activity android:name=".activity.VolleyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.TimerActivity"></activity>
-        <activity android:name=".activity.AsyncTaskActivity"></activity>
+        <activity android:name=".activity.TimerActivity" />
+        <activity android:name=".activity.AsyncTaskActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity android:name=".activity.SearchActivity" />
         <activity android:name=".activity.LoopActivity" />
@@ -27,5 +30,4 @@
         <activity android:name=".activity.RxSampleActivity" />
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

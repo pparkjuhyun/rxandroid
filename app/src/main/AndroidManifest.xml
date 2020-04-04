@@ -13,14 +13,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activity.RetrofitActivity"></activity>
-        <activity android:name=".activity.VolleyActivity">
+        <activity android:name=".activity.CDActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.RetrofitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.VolleyActivity"></activity>
         <activity android:name=".activity.TimerActivity" />
         <activity android:name=".activity.AsyncTaskActivity" />
         <activity android:name=".activity.RecyclerViewActivity" />

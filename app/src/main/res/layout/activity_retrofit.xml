@@ -5,5 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.RetrofitActivity">
-
+    <Button
+        android:id="@+id/btn_only_retrofit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="retrofit"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/btn_retrofit_okhttp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="retrofit + okhttp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_only_retrofit"/>
+    <Button
+        android:id="@+id/btn_retrofit_rxjava"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="retrofit + okhttp + rxjava"
+        app:layout_constraintTop_toBottomOf="@+id/btn_retrofit_okhttp"/>
+    <ListView
+        android:id="@+id/lv_rf_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_retrofit_rxjava" />
 </androidx.constraintlayout.widget.ConstraintLayout>
